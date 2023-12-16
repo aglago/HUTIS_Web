@@ -108,7 +108,7 @@ div.menu_icon {
     .one, .two, .three {
         height: 4px;
         width: 30px;
-        background-color: #4070F4;
+        background-color: var(--primary);
         border-radius: 5px;        
     }
 
