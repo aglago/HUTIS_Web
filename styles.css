@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    --secondary: #64E9FF;
+    --primary: #103CE7;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* color for "digital" */
+div.left span.dig {
+    color: var(--secondary);
+}
+
+/* text gradient for "development" */
+div.left span.dev {
+    background: -webkit-linear-gradient(310deg, #0d0e51, #103CE7, #2fffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Description before images */
+div.desc {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    div.desc {
+        flex-direction: column;
+    }
+}
+
+div.desc div.left {
+    font-size: 20px;
+}
+
+div.desc p.right {
+    font-size: 15px;
+}
+
+div.left img {
+    margin-top: -2rem;
+}
+
+/* The whole section */
+section.sec_two {
+    padding: 0 2rem;
+    margin-top: 4rem;
+    background: linear-gradient(310deg, #025166, #7478b7);
+    height: 90vh;
+}
+
+/* Define structure of the images div */
+div.imgs {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    overflow: auto;
+    margin-top: 2rem;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+div.imgs::-webkit-scrollbar {
+    display: none;
+}
+  
+/* Hide scrollbar for IE, Edge and Firefox */
+div.imgs {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Size images */
+div.imgs img {
+    height: 48vh;
+    width: 48vw;
+}
+
+@media screen and (max-width: 600px) {
+    div.imgs img {
+        height: 20vh;
+        width: 35vw;
+        flex-direction: row;
+    }
+}
