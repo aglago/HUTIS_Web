@@ -160,7 +160,7 @@ div.imgs img {
 
 @media screen and (max-width: 600px) {
     div.imgs img {
-        height: 20vh;
+        height: 18vh;
         width: 35vw;
         flex-direction: row;
     }
