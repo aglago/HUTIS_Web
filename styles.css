@@ -34,7 +34,7 @@ header {
 
 @media screen and (max-width: 600px) {
     header {
-        height: 11vh;
+        height: 12vh;
     }
 }
 
@@ -238,7 +238,7 @@ div_three_to_middle {
 
 @media screen and (max-width: 600px) {
     .landing {
-        height: 75vh;
+        height: 74vh;
         padding-bottom: unset;
     }
 }
