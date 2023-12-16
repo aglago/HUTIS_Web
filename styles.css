@@ -32,6 +32,12 @@ header {
     padding: 0 1.5rem;
 }
 
+@media screen and (max-width: 600px) {
+    header {
+        height: 11vh;
+    }
+}
+
 
 nav {
     width: 50%;
