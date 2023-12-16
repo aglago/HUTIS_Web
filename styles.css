@@ -23,6 +23,7 @@ body {
 
 /* Header */
 header {
+    position: fixed;
     height: 15vh;
     width: 100%;
     background-color: var(--header);
@@ -231,14 +232,16 @@ div_three_to_middle {
     justify-content: center;
     flex-direction: column;
     color: #fff;
-    height: 95vh;
-    background: linear-gradient(to right, rgba(64,64,64, 0.8), rgba(57, 72, 83, 0.8), rgba(22, 30, 65, 1));
+    height: 100vh;
+    background: linear-gradient(to right, rgba(64,64,64, 0.8), rgba(22, 30, 65, 1));
+    padding-top: 20vh;
     padding-bottom: 11vh;
 }
 
 @media screen and (max-width: 600px) {
     .landing {
-        height: 74vh;
+        padding-top: 10vh;
+        height: 90vh;
         padding-bottom: unset;
     }
 }
