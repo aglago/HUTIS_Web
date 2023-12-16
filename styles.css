@@ -230,6 +230,13 @@ div_three_to_middle {
     padding-bottom: 11vh;
 }
 
+@media screen and (max-width: 600px) {
+    .landing {
+        height: 75vh;
+        padding-bottom: unset;
+    }
+}
+
 .landing::before {
     filter: blur(2px);
 }
@@ -245,7 +252,12 @@ div_three_to_middle {
 
 @media screen and (max-width: 600px) {
     .landing h1 {
-        font-size: 21px;
+        font-size: 25px;
+    }
+
+    .landing p {
+        font-size: 15px;
+        max-width: 300px;
     }
 }
 
@@ -272,6 +284,12 @@ div_three_to_middle {
     border-radius: 5px;
 }
 
+@media screen and (max-width: 600px) {
+    .landing div.hire {
+        width: 30vw;
+    }
+}
+
 /* Achievements Tab */
 section.sec_two div.achieve {
     width: 100%;
@@ -292,7 +310,6 @@ section.sec_two div.achieve {
         gap: 3rem;
         padding: 2rem 0 2rem 3rem;
         align-items: unset;
-        margin: 2rem 0;
     }
 }
 
