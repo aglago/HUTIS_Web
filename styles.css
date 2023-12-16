@@ -14,6 +14,76 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* Achievements Tab */
+section.sec_two div.achieve {
+    width: 100%;
+    height: 25vh;
+    background-color: #393EA6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    margin: 5rem 0;
+    width: 100% !important;
+}
+
+@media screen and (max-width: 600px) {
+    section.sec_two div.achieve {
+        height: auto;
+        flex-direction: column;
+        gap: 3rem;
+        padding: 2rem 0 2rem 3rem;
+        align-items: unset;
+        margin: 2rem 0;
+    }
+}
+
+div.cus {
+    display: flex;
+    gap: 10px;
+}
+
+div.achieve div.desc {
+    display: flex;
+    flex-direction: column;
+}
+
+div.achieve div.desc * {
+    margin: 0;
+}
+
+div.achieve div.desc span, 
+div.achieve div.desc p {
+    color: var(--secondary);
+}
+
+div.icon {
+    background-color: var(--secondary);
+    border-radius: 50%;
+    height: 10vh;
+    width: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.icon img {
+    height: 8vh;
+    width: 4vw;
+}
+
+@media screen and (max-width: 600px) {
+    div.icon {
+        height: 5vh;
+        width: 8vw;
+    }
+
+    div.icon img {
+        height: 4vh;
+        width: 7vw;
+    }
+}
+
 /* color for "digital" */
 div.left span.dig {
     color: var(--secondary);
@@ -52,11 +122,14 @@ div.left img {
 }
 
 /* The whole section */
-section.sec_two {
+section.sec_two > * {
     padding: 0 2rem;
+}
+
+section.sec_two {
     margin-top: 4rem;
+    padding-bottom: 5rem;
     background: linear-gradient(310deg, #025166, #7478b7);
-    height: 90vh;
 }
 
 /* Define structure of the images div */
