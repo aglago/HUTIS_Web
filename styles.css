@@ -231,11 +231,16 @@ div_three_to_middle {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 30px;
     color: #fff;
     height: 100vh;
     background: linear-gradient(to right, rgba(64,64,64, 0.8), rgba(22, 30, 65, 1));
     padding-top: 20vh;
     padding-bottom: 11vh;
+}
+
+.landing * {
+    margin: 0;
 }
 
 @media screen and (max-width: 600px) {
@@ -244,10 +249,6 @@ div_three_to_middle {
         height: 90vh;
         padding-bottom: unset;
     }
-}
-
-.landing::before {
-    filter: blur(2px);
 }
 
 .landing h1,
@@ -291,6 +292,7 @@ div_three_to_middle {
     text-align: center;
     line-height: 7vh;
     border-radius: 5px;
+    margin-top: 1rem;
 }
 
 @media screen and (max-width: 600px) {
