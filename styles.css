@@ -326,6 +326,7 @@ div.menu.noshow > * {
 
 .landing h1 span.company {
     background: -webkit-linear-gradient(315deg, #2fffff, #103CE7);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -439,6 +440,7 @@ div.left span.dig {
 /* text gradient for "development" */
 div.left span.dev {
     background: -webkit-linear-gradient(310deg, #0d0e51, #103CE7, #2fffff);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
