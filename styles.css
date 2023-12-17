@@ -14,7 +14,7 @@ body {
     margin: 0 auto;
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(310deg, rgba(2, 81, 102), #7478b7);
-    background: url(images/globe.png), linear-gradient(310deg, rgba(2, 81, 102), #7478b7);
+    background: url(images/globe.png), linear-gradient(to right, rgba(64,64,64, 0.8), rgba(22, 30, 65, 1));
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 
@@ -31,6 +31,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 1.5rem;
+    z-index: 10;
 }
 
 @media screen and (max-width: 600px) {
@@ -81,6 +82,7 @@ div.getstarted {
     line-height: 8vh;
     color: #fff;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 header div.menu_icon {
@@ -225,6 +227,29 @@ div_three_to_middle {
     }
 }
 
+/* Menu List on Mobile */
+div.menu {
+    position: absolute;
+    height: 0;
+    width: 0;
+    transition: width 1s ease;
+}
+
+div.menu > * {
+    display: none;
+}
+
+div.menu.show {
+    display: block;
+    background-color: var(--header);
+    height: 85vh;
+    width: 100vw;
+}
+
+div.menu.noshow {
+    width: 0;
+}
+
 /* Landing Page */
 .landing {
     display: flex;
@@ -253,6 +278,7 @@ div_three_to_middle {
 
 .landing h1,
 .landing p {
+    padding: 0 20px;
     text-align: center;
 }
 
@@ -293,6 +319,7 @@ div_three_to_middle {
     line-height: 7vh;
     border-radius: 5px;
     margin-top: 1rem;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {
